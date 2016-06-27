@@ -28,6 +28,12 @@ import retrofit2.http.Body;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
 
+/**
+ * FastJson Converter
+ * 
+ * @author deathdealer
+ *
+ */
 public class FastjsonConverterFactory extends Converter.Factory {
 
 	// Create {@code FastJsonConfig} for conversion.
@@ -39,13 +45,19 @@ public class FastjsonConverterFactory extends Converter.Factory {
 		}
 	}
 
+	/**
+	 * Create your own {@code fastjsonConfig} instance
+	 * 
+	 * @param fastJsonConfig
+	 * @return FastjsonConverterFactory
+	 */
 	public FastjsonConverterFactory config(FastJsonConfig fastJsonConfig) {
 		this.fastJsonConfig = fastJsonConfig;
 		return this;
 	}
 
 	/**
-	 * Create an instance using {@code fastjson} for conversion.
+	 * Create an instance for conversion.
 	 */
 	public static FastjsonConverterFactory create() {
 		return new FastjsonConverterFactory();
