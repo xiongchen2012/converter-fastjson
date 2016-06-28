@@ -2,7 +2,14 @@
 Simple request and response body converter for `retrofit2`(https://github.com/square/retrofit) via `fastjson`(https://github.com/alibaba/fastjson)
 
 ### Download
-
+##### maven
+```xml
+<dependency>
+    <groupId>cn.deathdealer</groupId>
+    <artifactId>converter-fastjson</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
 ### Usage
 <pre>
     Retrofit retrofit = new Retrofit.Builder()
